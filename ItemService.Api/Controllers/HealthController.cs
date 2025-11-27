@@ -14,7 +14,7 @@ namespace ItemService.Api.Controllers
     {
         private readonly IMongoDbContext _dbContext;
         private readonly IHostApplicationLifetime _lifetime;
-        private readonly DateTime _start = DateTime.UtcNow;
+        private readonly static DateTime _start = DateTime.UtcNow;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HealthController"/> class.
